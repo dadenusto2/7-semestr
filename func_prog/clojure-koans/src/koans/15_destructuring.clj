@@ -8,37 +8,39 @@
 
 (meditations
   "Destructuring is an arbiter: it breaks up arguments"
-  (= __ ((fn [[a b]] (str b a))
+  (= ":bar:foo" ((fn [[a b]] (str b a))
          [:foo :bar]))
 
   "Whether in function definitions"
   (= (str "An Oxford comma list of apples, "
           "oranges, "
           "and pears.")
-     ((fn [[a b c]] __)
+     ((fn [[a b c]] (str "An Oxford comma list of " a ", " b ", and "c "."))
       ["apples" "oranges" "pears"]))
 
   "Or in let expressions"
   (= "Rich Hickey aka The Clojurer aka Go Time aka Lambda Guru"
      (let [[first-name last-name & aliases]
            (list "Rich" "Hickey" "The Clojurer" "Go Time" "Lambda Guru")]
-       __))
+       (str first-name " " last-name " aka " (apply str (interpose " aka " aliases)))))
 
   "You can regain the full argument if you like arguing"
   (= {:original-parts ["Stephen" "Hawking"] :named-parts {:first "Stephen" :last "Hawking"}}
      (let [[first-name last-name :as full-name] ["Stephen" "Hawking"]]
-       __))
+       {:original-parts [first-name last-name] :named-parts {:first first-name :last last-name}}))
 
   "Break up maps by key"
   (= "123 Test Lane, Testerville, TX"
      (let [{street-address :street-address, city :city, state :state} test-address]
-       __))
+       (str street-address ", " city ", " state)))
 
   "Or more succinctly"
   (= "123 Test Lane, Testerville, TX"
-     (let [{:keys [street-address __ __]} test-address]
-       __))
+     (let [{:keys [street-address city state]} test-address]
+       (str street-address ", " city ", " state)))
 
   "All together now!"
   (= "Test Testerson, 123 Test Lane, Testerville, TX"
-     (___ ["Test" "Testerson"] test-address)))
+     ((fn [[p1 p2] {:keys [street-address city state]}]
+      (apply str (interpose ", " (list (str p1 " " p2) street-address city state))))
+      ["Test" "Testerson"] test-address)))

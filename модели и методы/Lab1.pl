@@ -14,9 +14,9 @@ child(Y, X):-parent(X, Y).
 male(sasha).
 male(kolya).
 male(pasha).
-male(sima).
 male(son).
 male(petya).
+male(sima).
 female(dasha).
 female(olya).
 female(masha).
@@ -31,7 +31,7 @@ sister(X, Y):-parent(Z, X), parent(Z, Y), female(X), dif(X, Y).
 
 % 4.11
 son(X, Y):-child(X, Y), male(X).
-sonOf(X):-son(Y, X), write(Y).
+son(X):-son(Y, X), write(Y).
 % 5
 brother(X, Y):-parent(Z, X), parent(Z, Y), male(X), dif(X, Y).
 brothers(X):-parent(Z, X), parent(Z, Y), male(Y), dif(X, Y), write(Y).
@@ -57,4 +57,3 @@ uncle(X):-parent(X, Z),brother(Y, Z), write(Y).
 % 13.11
 niece(X, Y):-parent(Z, X), parent(W, Z), parent(W, Y), female(X).
 niece(X):-parent(Z, Y), parent(W, Z), parent(W, X), female(Y), write(Y).
-
