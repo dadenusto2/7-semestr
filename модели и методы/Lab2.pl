@@ -130,28 +130,50 @@ dark_hair(hannes, 0).
 dark_hair(zik, 0).
 dark_hair(elena, 0).
 dark_hair(porko, 0).
-% участвовал ли в битве за сигансину
-sigansina(eren, 1).
-sigansina(armin, 1).
-sigansina(gan, 1).
-sigansina(levi, 1).
-sigansina(koni, 1).
-sigansina(arvin, 1).
-sigansina(micasa, 1).
-sigansina(handji, 1).
-sigansina(historia, 0).
-sigansina(sasha, 1).
-sigansina(rainer, 1).
-sigansina(bertold, 1).
-sigansina(anni, 0).
-sigansina(pik, 0).
-sigansina(gabi, 0).
-sigansina(lara, 0).
-sigansina(imir, 0).
-sigansina(hannes, 0).
-sigansina(zik, 1).
-sigansina(elena, 0).
-sigansina(porko, 0).
+% участвовал ли в нападении сигансины
+sigansina_attack(eren, 1).
+sigansina_attack(armin, 1).
+sigansina_attack(gan, 0).
+sigansina_attack(levi, 0).
+sigansina_attack(koni, 0).
+sigansina_attack(arvin, 0).
+sigansina_attack(micasa, 1).
+sigansina_attack(handji, 0).
+sigansina_attack(historia, 0).
+sigansina_attack(sasha, 0).
+sigansina_attack(rainer, 1).
+sigansina_attack(bertold, 1).
+sigansina_attack(anni, 0).
+sigansina_attack(pik, 0).
+sigansina_attack(gabi, 0).
+sigansina_attack(lara, 0).
+sigansina_attack(imir, 0).
+sigansina_attack(hannes, 1).
+sigansina_attack(zik, 0).
+sigansina_attack(elena, 0).
+sigansina_attack(porko, 0).
+% участвовал ли в освобождении сигансины
+sigansina_free(eren, 1).
+sigansina_free(armin, 1).
+sigansina_free(gan, 1).
+sigansina_free(levi, 1).
+sigansina_free(koni, 1).
+sigansina_free(arvin, 1).
+sigansina_free(micasa, 1).
+sigansina_free(handji, 1).
+sigansina_free(historia, 0).
+sigansina_free(sasha, 1).
+sigansina_free(rainer, 1).
+sigansina_free(bertold, 1).
+sigansina_free(anni, 0).
+sigansina_free(pik, 0).
+sigansina_free(gabi, 0).
+sigansina_free(lara, 0).
+sigansina_free(imir, 0).
+sigansina_free(hannes, 0).
+sigansina_free(zik, 1).
+sigansina_free(elena, 0).
+sigansina_free(porko, 0).
 % один из трех главных героев?
 main(eren, 1).
 main(armin, 1).
@@ -175,50 +197,55 @@ main(zik, 0).
 main(elena, 0).
 main(porko, 0).
 
-question1(X1):-	write("Какой пол персонажа!"),nl,
-				write("1. мужской"),nl,
-				write("0. женский"),nl,
+question1(X1):-	write("What gender is the character?"),nl,
+				write("1. male"),nl,
+				write("0. female"),nl,
 				read(X1).
 
-question2(X2):-	write("Ваш персонаж участник разведкорпуса?"),nl,
-				write("1. Да"),nl,
-				write("0. Нет"),nl,
+question2(X2):-	write("Your character is a member of the reconnaissance corps?"),nl,
+				write("1. Yes"),nl,
+				write("0. No"),nl,
 				read(X2).
 
-question3(X3):-	write("Жив ли Ваш персонаж?"),nl,
-				write("1. Да"),nl,
-				write("0. Нет"),nl,
+question3(X3):-	write("Is your character alive??"),nl,
+				write("1. Yes"),nl,
+				write("0. No"),nl,
 				read(X3).
 
-question4(X4):-	write("Ваш персонаж воюет за эльдийцев?"),nl,
-				write("1. Да"),nl,
-				write("0. Нет"),nl,
+question4(X4):-	write("Your character is fighting for the Eldians?"),nl,
+				write("1. Yes"),nl,
+				write("0. No"),nl,
 				read(X4).
 
-question5(X5):-	write("Ваш персонаж титан?"),nl,
-				write("1. Да"),nl,
-				write("0. Нет"),nl,
+question5(X5):-	write("Your character is titan?"),nl,
+				write("1. Yes"),nl,
+				write("0. No"),nl,
 				read(X5).
 
-question6(X6):-	write("У Вашего персонажа темные волосы?"),nl,
-				write("1. Да"),nl,
-				write("0. Нет"),nl,
+question6(X6):-	write("Does your character have dark hair?"),nl,
+				write("1. Yes"),nl,
+				write("0. No"),nl,
 				read(X6).
 
-question7(X7):-	write("Участвовал ли Ваш персонаж в битве за сигансину?"),nl,
-				write("1. Да"),nl,
-				write("0. Нет"),nl,
+question7(X7):-	write("Was your character involved in the attack on Shiganshin?"),nl,
+				write("1. Yes"),nl,
+				write("0. No"),nl,
 				read(X7).
 
-question8(X8):-	write("Это один из трех главных персонажей"),nl,
-				write("1. Да"),nl,
-				write("0. Нет"),nl,
+question8(X8):-	write("Was your character involved in freeing Shigansina?"),nl,
+				write("1. Yes"),nl,
+				write("0. No"),nl,
 				read(X8).
 
+question9(X9):-	write("Is this one of the three main characters?"),nl,
+				write("1. Yes"),nl,
+				write("0. No"),nl,
+				read(X9).
 
 
-pr:-	question1(X1),question2(X2),question3(X3),question4(X4),
-		question5(X5),question6(X6),question7(X7),question7(X8),
+
+pr1:-	question1(X1),question2(X2),question3(X3),question4(X4),
+		question5(X5),question6(X6),question7(X7),question8(X8),question9(X9),
 		male(X,X1),reconnaissance_corps(X,X2),alive(X,X3),eldian(X,X4),
-		titan(X,X5),dark_hair(X,X6),sigansina(X,X7),main(X,X8),
+		titan(X,X5),dark_hair(X,X6),sigansina_attack(X,X7),sigansina_free(X,X8),main(X,X9),
 		write(X).
