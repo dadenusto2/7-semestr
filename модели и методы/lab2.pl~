@@ -10,6 +10,7 @@ male(hannes, 1).
 male(rainer, 1).
 male(bertold, 1).
 male(porko, 1).
+male(micasa, 0).
 male(sasha, 0).
 male(handji, 0).
 male(anni, 0).
@@ -196,46 +197,50 @@ main(zik, 0).
 main(elena, 0).
 main(porko, 0).
 
-question1(X1):-	write("пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ?"),nl,
+question1(X1):-	write("Пол вашего героя?"),nl,
 				write("1. male"),nl,
 				write("0. female"),nl,
 				read(X1).
 
-question2(X2):-	write("пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ?"),nl,
+question2(X2):-	write("Ваш персонаж входит в состав развет корпуса?"),nl,
 				write("1. Yes"),nl,
 				write("0. No"),nl,
 				read(X2).
 
-question3(X3):-	write("пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ?"),nl,
+question3(X3):-	write("Ваш персонаж жив?"),nl,
 				write("1. Yes"),nl,
 				write("0. No"),nl,
 				read(X3).
 
-question4(X4):-	write("пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ?"),nl,
+question4(X4):-	write("Ваш персонаж дрался за ИЛЬДИЮ?"),nl,
 				write("1. Yes"),nl,
 				write("0. No"),nl,
 				read(X4).
 
-question5(X5):-	write("пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ?"),nl,
+question5(X5):-	write("Ваш персонаж Титан?"),nl,
 				write("1. Yes"),nl,
 				write("0. No"),nl,
 				read(X5).
 
-question6(X6):-	write("пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ?"),nl,
+question6(X6):-	write("У вашего персонада темные волосы?"),nl,
 				write("1. Yes"),nl,
 				write("0. No"),nl,
 				read(X6).
 
-question7(X7):-	write("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ?"),nl,
+question7(X7):-	write("Участвовал ли ваш персонаж в атаке на Сигансину?"),nl,
 				write("1. Yes"),nl,
 				write("0. No"),nl,
 				read(X7).
 
-question8(X8):-	write("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ?"),nl,
+question8(X8):-	write("Участвовал ли ваш персонаж в освобождении Сигансины?"),nl,
 				write("1. Yes"),nl,
 				write("0. No"),nl,
 				read(X8).
 
+question9(X9):-	write("Это один из 3-х главных персонажей?"),nl,
+				write("1. Yes"),nl,
+				write("0. No"),nl,
+				read(X9).
 
 pr1:-	question1(X1),question2(X2),question3(X3),question4(X4),
 		question5(X5),question6(X6),question7(X7),question8(X8),question9(X9),
