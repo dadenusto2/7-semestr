@@ -86,3 +86,46 @@ delOdd2(N,C,X1,N1,N3,X):-
                         delOdd2(M,C1,X2,N1,N3,X);
                         (N < X1, N mod N3 > 0 ->
                             X is N; X is X1)).
+
+%12
+nod(X, Y):-nodd(X, Y, Z), write(Z).
+nodd(X, Y, Z):-
+    abs(X, X1),
+    abs(Y, Y1),
+    % write(X1),
+    % write(';'),
+    % write(Y1),
+    % write('. '),
+    T is 2,
+    X2 is X1 mod T,
+    Y2 is Y1 mod T,
+    % write(X2),
+    % write(';'),
+    % write(Y2),
+    % write('.    '),
+    ( 
+        (X1 = 0) -> Z is Y1;
+        (Y1 = 0) -> Z is X1;
+        (X1 = Y1) -> Z is X1;
+        ( (X2 = 0) -> (Y2 = 0 -> X3 is (X1/T), Y3 is (Y1/T),nodd(X3, Y3, Z1), Z is 2*Z1;
+                                X3 is (X1/T), Y3 is Y1, nodd(X3, Y3, Z));
+                    (Y2 = 0 -> Y3 is (Y1/T), X3 is X1, nodd(X3, Y3, Z);
+                              R is (Y1 - X1), abs(R, P), nodd(Y1, P, Z)))
+    ).
+% 13.11
+sum(X):-abs(X, X1),sumN(X1,0,10,S1),S is S1, mulN(X1,1,10,M1),M is M1,write('S:'), write(S),write('; M:'), write(M), write('; \n'), sumDel(X1, 0, 1, S, M, Z), write(Z).
+sumN(N,X1,N1,X):-N2 is (N1-1),(N>N2 -> M is (N mod N1), X2 is (X1 + M), D is (N div N1), sumN(D,X2,N1,X); X is X1 + N).
+mulN(N,X1,N1,X):-N2 is (N1-1),(N>N2 -> M is (N mod N1), X2 is (X1 * M), D is (N div N1), mulN(D,X2,N1,X); X is X1 * N).
+sumDel(X, K, I, S, M, Z):-
+    (X>I -> (
+            Y is X mod I,
+            (Y = 0 -> (nodd(I, S, N1), nodd(I, M, N2),write('I:'),write(I),write('; nod sum del:'),write(N1),write('; nod mul del:'),write(N2),write(';\n'),
+                    (N1 = 1 -> 
+                        (N2 \= 1 ->
+                            K1 is K+I, I1 is I+1, sumDel(X, K1, I1, S, M, Z);
+                            I1 is I+1, sumDel(X, K, I1, S, M, Z));
+                    I1 is I+1, sumDel(X, K, I1, S, M, Z)));
+                I1 is I+1, sumDel(X, K, I1, S, M, Z)));
+            (nodd(I, S, N1), nodd(I, M, N2), (N1 = 1 -> (N2 \= 1 -> write('I:'),write(I),write('; nod sum del:'),write(N1),write('; nod mul del:'),write(N2),write(';\n'),
+                Z is K+I; Z is K); Z is K))).
+    
