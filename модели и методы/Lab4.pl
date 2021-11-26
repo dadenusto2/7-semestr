@@ -1,6 +1,8 @@
 min(X,Y,Z):-X<Y -> Z is X;Z is Y.
 max(X,Y,Z):-X>Y -> Z is X;Z is Y.
 if(A,B,C):-A,B;\+A,C.
+abs(X, P):-(X<0 -> P is -X; P is X).
+loc_max2(A, B, C, X):-(B>A -> (B>C -> (X is 1);(X is 0));(X is 0)).
 % 1
 list_read(X):-write("Count of elments:"),nl,read(N)
         ,nl, write("Input element:"),nl,list_read(N,X1),append(X1,[],X),write(X),write('\n').
@@ -132,37 +134,54 @@ loc_max:-
         nth0(0, X, E1), 
         nth0(1, X, E2), 
         (E1>E2->C1 is 1;C1 is 0),
-        write(C1),
-        write('\n'),
+        % write(C1),
+        % write('\n'),
         length(X, L),
         L1 is L-1,
         L2 is L-2,
         nth0(L1, X, E3),
         nth0(L2, X, E4),
         (E3>E4->C2 is C1+1;C2 is C1),
-        write(C2),
-        write('\n'),
-        loc_max1(X, 1, L1, C2, Y),
-        write(Y).
+        % write(C2),
+        write('\nAnswer:'),
+        loc_max1(X, 1, L1, C2, Z),
+        write(Z).
 
 loc_max1([H|T], I, L, C, X):-
         (I<L ->
         (I1 is I+1,
-        E0 is H,
-        nth0(0, T, E),
-        nth0(1, T, E2),
-        write('\nE0:'),
-        write(E0),
-        write('\nE:'),
-        write(E),
-        write('\nE2:'),
-        write(E2),
-        write('\n'),
-        (E>E0-> (E->E2-> C1 is C+1;C1 is C);C1 is C),
-        write(C1),
-        write('\n'),
-        loc_max1(T, I1, L, C1, X));
+        I0 is I-1,
+        nth0(I0, [H|T], E0),
+        nth0(I, [H|T], E),
+        nth0(I1, [H|T], E2),
+        loc_max2(E0, E, E2, C1),
+        C2 is C + C1,
+        loc_max1([H|T], I1, L, C2, X));
         X is C
         ).
-                
-        
+
+%18.35
+close_elem:-
+        write('N:'),
+        read(N),
+        list_read(X),
+        (member(N, X)->write('\nAnswer:'),write(N);search_close(X, N, 1)).
+
+search_close(X, N, I):-
+        N0 is N - I,
+        N1 is N + I,
+        (member(N0, X) , member(N1, X) ->
+        (
+                (member(N0, X) -> write('\nAnswer:'),write(N0)),
+                (member(N1, X) -> write('\nAnswer:'),write(N1))
+        );
+        I1 is I+1, search_close(X, N, I1)).
+
+%18.41
+sum_abs:-list_read(X),
+        sum_list_abs(X,S),
+        write('\nAnswer:'),
+        write(S).
+
+sum_list_abs([],0).
+sum_list_abs([H|T],S):-sum_list_abs(T,S1),abs(H, A),S is S1+A.
