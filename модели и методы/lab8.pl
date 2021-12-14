@@ -1,4 +1,4 @@
-% размещение по к без повторений
+% размещение по к c повторений
 eval([],_).
 eval([H|T],Set):-member(H,Set),eval(T,Set).
 permutation_with(Set, N, L):-length(L,N), eval(L,Set).
@@ -36,7 +36,6 @@ comb([_|T], N, Comb) :- N > 0, comb(T, N, Comb).
 later(a).
 count([],_,0).
 count([H|T],E,N):-H = E,count(T,E,N1),N is N1+1; not(H=E),count(T,E,N1),N is N1.
-
 ex2:-append([], [a,b,c,d,e,f], Set),length(L,5), eval(L,Set), 
 later(A), count(L, A, NA), (NA=2-> write(L)).
 
@@ -62,12 +61,6 @@ ex4:-append([], [a,b,c,d,e,f], Set),length(L,5), eval(L,Set),
     (N=4->write(L)).
 
 % 5
-later1(a).
-later1(b).
-later1(c).
-later1(d).
-later1(e).
-later1(f).
 ex5([], _, _,B):-B1 is 1, B is B1.
 ex5([H|T], L, K, B):-
     count(L, H, N),
@@ -121,7 +114,7 @@ ex10:-append([], [a,b,c,d,e,f], Set),length(L,7), eval(L,Set),
   list_to_set(L,S), length(S, NA),(NA=4-> write(L)).
 
 % 11
-ex11:-append([], [a,b,c,d,e,f], Set),length(L,8), eval(L,Set), 
+ex11:-append([], [a,b,c,d,e,f], Set),K is 0,length(L,8), eval(L,Set), 
   list_to_set(L,S), length(S, NA),(NA=3-> write(L)).
 
 %12
