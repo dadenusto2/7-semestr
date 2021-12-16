@@ -1,0 +1,321 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#"
+     xml:base="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#В_жанре -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#В_жанре">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Жанр"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Вышла_на -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Вышла_на">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровая_платформа"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Жанр -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Жанр">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Жанр"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Имеет_игру -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Имеет_игру">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровая_платформа"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Разработана -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Разработана">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровая_платформа"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Сделала_игру -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Сделала_игру">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Сделала_компания -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Сделала_компания">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Создала -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Создала">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровая_платформа"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Год -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Год"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Название -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Название"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Battle_Royal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Battle_Royal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Жанр"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#MOBA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#MOBA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Жанр"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровая_платформа"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Консоль"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#XBOX -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#XBOX">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Консоль"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Авто_симулятор -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Авто_симулятор">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Симулятор"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Жанр -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Жанр"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровая_платформа -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровая_платформа"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Консоль -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Консоль">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровая_платформа"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Мобильная -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Мобильная">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровая_платформа"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#От_первого_лица -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#От_первого_лица">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Шутер"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#От_третьего_лица -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#От_третьего_лица">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Шутер"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Симулятор -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Симулятор">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Жанр"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Спортивный_симулятор -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Спортивный_симулятор">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Симулятор"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Шутер -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Шутер">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Жанр"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#BattleField -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#BattleField">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра"/>
+        <Сделала_компания rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#EA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#EA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#EA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания"/>
+        <Сделала_игру rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#BattleField"/>
+        <Сделала_игру rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Fifa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Fifa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Fifa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Спортивный_симулятор"/>
+        <Сделала_компания rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#EA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PS5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PS5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Sony -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Sony">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
