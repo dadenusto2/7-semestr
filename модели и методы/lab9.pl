@@ -53,12 +53,50 @@ ex4(VL, EL, X, Y):-
     ex4(NewVL, NewEL2, X1, X2),
     append(X2, [], Y).
 
-
 %5
-vertexChild(_, _, [],L):-append([], [], L).
-vertexChild(EL, V, [H|T], L):- ( (member(e(V, H), EL) ; member(e(H, V), EL)) -> (vertexChild(EL, V, T, L1), append([H], L1, L));(vertexChild(EL, V, T, L1), append([], L1, L))).
+finish(6).
 
-ex5:-vertexList(VL), edgesList(EL), 
-    vertexChild(EL, 1, VL, FL),write(FL).
+replace(I, L, E, K) :-
+  nth0(I, L, _, R),
+  nth0(I, K, E, R).
 
-ex6:-length([1], C), write(C).
+emptyList(K, N, L):-(K<N->(K1 is K+1, emptyList(K1, N, L1),append([-1], L1, L)); append([], [], L)).
+
+emptyListAdd([], _, _, _,CV, FCV):-append(CV, [], FCV).
+emptyListAdd([H|T], VC, VL, K, CV, FCV):-
+    nth0(IND,VL,H), 
+    nth0(IND,VC,V),
+    (not(V>0)->replace(IND, VC, K, NVC),(emptyListAdd(T, NVC, VL, K, NVC, FCV));
+    (append([], VC, NVC), emptyListAdd(T, VC, VL, K, VC, FCV))).
+
+ex5:-vertexList(VL), edgesList(EL),
+    length(VL, N), 
+    emptyList(0, N, VO),
+    append([1], [], STR),
+    append(STR, [], VC),
+    emptyListAdd(STR, VO, VL, 0, CV, FCV),
+    finish(FIN),
+    ex5(EL, STR, STR, FIN, VL, VC, FCV, FL, 0),
+    list_to_set(FL, FS).
+
+way(STR, FIN, VL, VC, EL, W).
+
+ex5(EL, [H|T], STR, FIN, VL, VC, VO, FL, K):-
+    vertexInEdges(EL, [H|T], VL, VC, VL, FL),
+    K1 is K+1,
+    write("Порядок "),write(K1),write(FL),nl,
+    emptyListAdd(FL, VO, VL, K1, CV, FCV),
+    append(VC, FL, NFCV),
+    write(FCV),nl,
+    (not(member(FIN, FL))->ex5(EL, FL, STR,FIN, VL, NFCV, FCV, NFL, K1)).
+
+vertexInEdges(_, [], _, _, _, []).
+vertexInEdges(EL, [H|T], VL, VC, VL, FL):-
+    vertexChild(EL, H, VL, VC, VL, L),
+    append(L, [], NL),
+    vertexInEdges(EL, T, VL, VC, VL, NL2),
+    append(NL, NL2, FL).
+
+vertexChild(_, _, [], _, _, L):-append([], [], L).
+vertexChild(EL, V, [H|T], VC, VL, L):- ( ((member(e(V, H), EL) ; member(e(H, V), EL)), not(member(H, VC))) -> (vertexChild(EL, V, T, VC, VL, L1), append([H], L1, L));(vertexChild(EL, V, T, VC, VL, L1), append([], L1, L))).
+
