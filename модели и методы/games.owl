@@ -1,319 +1,1129 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#"
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:untitled-ontology-2="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#В_жанре -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#В_жанре">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Жанр"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Вышла_на -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Вышла_на">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровая_платформа"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Жанр -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Жанр">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Жанр"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Имеет_игру -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Имеет_игру">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровая_платформа"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Разработана -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Разработана">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровая_платформа"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Сделала_игру -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Сделала_игру">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Сделала_компания -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Сделала_компания">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Создала -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Создала">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровая_платформа"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Год -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Год"/>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Название -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Название"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Battle_Royal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Battle_Royal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Жанр"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#MOBA -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#MOBA">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Жанр"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PC -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PC">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровая_платформа"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PS -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PS">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Консоль"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#XBOX -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#XBOX">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Консоль"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Авто_симулятор -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Авто_симулятор">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Симулятор"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Жанр -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Жанр"/>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра"/>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровая_платформа -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровая_платформа"/>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания"/>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Консоль -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Консоль">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровая_платформа"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Мобильная -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Мобильная">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровая_платформа"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#От_первого_лица -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#От_первого_лица">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Шутер"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#От_третьего_лица -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#От_третьего_лица">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Шутер"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Симулятор -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Симулятор">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Жанр"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Спортивный_симулятор -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Спортивный_симулятор">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Симулятор"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Шутер -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Шутер">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Жанр"/>
-    </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#BattleField -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#BattleField">
-        <rdf:type rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра"/>
-        <Сделала_компания rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#EA"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#EA -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#EA">
-        <rdf:type rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания"/>
-        <Сделала_игру rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#BattleField"/>
-        <Сделала_игру rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Fifa"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Fifa -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Fifa">
-        <rdf:type rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Спортивный_симулятор"/>
-        <Сделала_компания rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#EA"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PS5 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PS5">
-        <rdf:type rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PS"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Sony -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Sony">
-        <rdf:type rdf:resource="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания"/>
-    </owl:NamedIndividual>
-</rdf:RDF>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2">
+    <Prefix name="" IRI="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="untitled-ontology-2" IRI="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#"/>
+    <Declaration>
+        <Class IRI="#Спортивный_симулятор"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Origin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nintendo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Принадлежит_компании"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PS4"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Сделана_на_движке"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Switch"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Игровой_движок_разработан_компанией"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Оценка"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Battle_Royal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#iOS"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Материнская_компания"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PS5"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Вышла_на_платформе"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MOBA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ForzaTech"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sony"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#XBOX_Store"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Оценка_Kataku"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fifa_22"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Игра_вышла_на_платформе"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Платформа_разработана_компанией"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Платформа_имеет_игру"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Разаработала_движок"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Valve"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Frosbite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Вышла_на_платформе"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XBOX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EA"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Оборот"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Шутер"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Операционная_прибль"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Сделала_игру"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Движок_игры"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Консоль"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Симулятор"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Авто_симулятор"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SeriesX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PSstore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#От_третьего_лица"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Мобильная"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Дочерняя_компания"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Игровой_движок"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Оценка_PCWorld"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Игровая_платформа"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Сделала_компания"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Разработала_лаунчер"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Steam"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Число_сотрудников"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Активы"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Лаунчер"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#One"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Компания"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Оценка_Stopgame"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Оценка_канобу"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DICE"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Чистая_прибль"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Оценка_критиков_на_Metacritic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Жанр"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Лаунчер_имеет_игру"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Капитализация"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#От_первого_лица"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Показатель"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Игра"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Microsoft"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BattleField_2042"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Forza_Horizon_5"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Оценка_игромании"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Создала_платформу"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Пользовательская_ценка_на_Metacritic"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Battle_Royal"/>
+        <Class IRI="#Жанр"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MOBA"/>
+        <Class IRI="#Жанр"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PC"/>
+        <Class IRI="#Игровая_платформа"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PS"/>
+        <Class IRI="#Консоль"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#XBOX"/>
+        <Class IRI="#Консоль"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Авто_симулятор"/>
+        <Class IRI="#Симулятор"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Консоль"/>
+        <Class IRI="#Игровая_платформа"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Мобильная"/>
+        <Class IRI="#Игровая_платформа"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#От_первого_лица"/>
+        <Class IRI="#Шутер"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#От_третьего_лица"/>
+        <Class IRI="#Шутер"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Симулятор"/>
+        <Class IRI="#Жанр"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Спортивный_симулятор"/>
+        <Class IRI="#Симулятор"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Шутер"/>
+        <Class IRI="#Жанр"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Игра"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#От_первого_лица"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Компания"/>
+        <NamedIndividual IRI="#DICE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Компания"/>
+        <NamedIndividual IRI="#EA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Игра"/>
+        <NamedIndividual IRI="#Fifa_22"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Спортивный_симулятор"/>
+        <NamedIndividual IRI="#Fifa_22"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Игровой_движок"/>
+        <NamedIndividual IRI="#ForzaTech"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Авто_симулятор"/>
+        <NamedIndividual IRI="#Forza_Horizon_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Игра"/>
+        <NamedIndividual IRI="#Forza_Horizon_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Игровой_движок"/>
+        <NamedIndividual IRI="#Frosbite"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Компания"/>
+        <NamedIndividual IRI="#Microsoft"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Компания"/>
+        <NamedIndividual IRI="#Nintendo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XBOX"/>
+        <NamedIndividual IRI="#One"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Лаунчер"/>
+        <NamedIndividual IRI="#Origin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PC"/>
+        <NamedIndividual IRI="#PC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PS"/>
+        <NamedIndividual IRI="#PS4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PS"/>
+        <NamedIndividual IRI="#PS5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Лаунчер"/>
+        <NamedIndividual IRI="#PSstore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#XBOX"/>
+        <NamedIndividual IRI="#SeriesX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Компания"/>
+        <NamedIndividual IRI="#Sony"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Лаунчер"/>
+        <NamedIndividual IRI="#Steam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Консоль"/>
+        <NamedIndividual IRI="#Switch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Компания"/>
+        <NamedIndividual IRI="#Valve"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Лаунчер"/>
+        <NamedIndividual IRI="#XBOX_Store"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Мобильная"/>
+        <NamedIndividual IRI="#iOS"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Вышла_на_платформе"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+        <NamedIndividual IRI="#Origin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Вышла_на_платформе"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+        <NamedIndividual IRI="#PSstore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Вышла_на_платформе"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+        <NamedIndividual IRI="#XBOX_Store"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Игра_вышла_на_платформе"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+        <NamedIndividual IRI="#One"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Игра_вышла_на_платформе"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+        <NamedIndividual IRI="#PC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Игра_вышла_на_платформе"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+        <NamedIndividual IRI="#PS4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Игра_вышла_на_платформе"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+        <NamedIndividual IRI="#PS5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Игра_вышла_на_платформе"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+        <NamedIndividual IRI="#SeriesX"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Сделала_компания"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+        <NamedIndividual IRI="#DICE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Сделана_на_движке"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+        <NamedIndividual IRI="#Frosbite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Дочерняя_компания"/>
+        <NamedIndividual IRI="#DICE"/>
+        <NamedIndividual IRI="#EA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Сделала_игру"/>
+        <NamedIndividual IRI="#DICE"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Материнская_компания"/>
+        <NamedIndividual IRI="#EA"/>
+        <NamedIndividual IRI="#DICE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Разаработала_движок"/>
+        <NamedIndividual IRI="#EA"/>
+        <NamedIndividual IRI="#Frosbite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Разработала_лаунчер"/>
+        <NamedIndividual IRI="#EA"/>
+        <NamedIndividual IRI="#Origin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Сделала_игру"/>
+        <NamedIndividual IRI="#EA"/>
+        <NamedIndividual IRI="#Fifa_22"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Вышла_на_платформе"/>
+        <NamedIndividual IRI="#Fifa_22"/>
+        <NamedIndividual IRI="#Origin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Вышла_на_платформе"/>
+        <NamedIndividual IRI="#Fifa_22"/>
+        <NamedIndividual IRI="#PSstore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Вышла_на_платформе"/>
+        <NamedIndividual IRI="#Fifa_22"/>
+        <NamedIndividual IRI="#XBOX_Store"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Игра_вышла_на_платформе"/>
+        <NamedIndividual IRI="#Fifa_22"/>
+        <NamedIndividual IRI="#One"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Игра_вышла_на_платформе"/>
+        <NamedIndividual IRI="#Fifa_22"/>
+        <NamedIndividual IRI="#PC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Игра_вышла_на_платформе"/>
+        <NamedIndividual IRI="#Fifa_22"/>
+        <NamedIndividual IRI="#PS4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Игра_вышла_на_платформе"/>
+        <NamedIndividual IRI="#Fifa_22"/>
+        <NamedIndividual IRI="#PS5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Игра_вышла_на_платформе"/>
+        <NamedIndividual IRI="#Fifa_22"/>
+        <NamedIndividual IRI="#SeriesX"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Сделала_компания"/>
+        <NamedIndividual IRI="#Fifa_22"/>
+        <NamedIndividual IRI="#EA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Сделана_на_движке"/>
+        <NamedIndividual IRI="#Fifa_22"/>
+        <NamedIndividual IRI="#Frosbite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Движок_игры"/>
+        <NamedIndividual IRI="#ForzaTech"/>
+        <NamedIndividual IRI="#Forza_Horizon_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Игровой_движок_разработан_компанией"/>
+        <NamedIndividual IRI="#ForzaTech"/>
+        <NamedIndividual IRI="#Microsoft"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Движок_игры"/>
+        <NamedIndividual IRI="#Forza_Horizon_5"/>
+        <NamedIndividual IRI="#ForzaTech"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Игра_вышла_на_платформе"/>
+        <NamedIndividual IRI="#Forza_Horizon_5"/>
+        <NamedIndividual IRI="#One"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Игра_вышла_на_платформе"/>
+        <NamedIndividual IRI="#Forza_Horizon_5"/>
+        <NamedIndividual IRI="#PC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Игра_вышла_на_платформе"/>
+        <NamedIndividual IRI="#Forza_Horizon_5"/>
+        <NamedIndividual IRI="#SeriesX"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Сделала_компания"/>
+        <NamedIndividual IRI="#Forza_Horizon_5"/>
+        <NamedIndividual IRI="#Microsoft"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Движок_игры"/>
+        <NamedIndividual IRI="#Frosbite"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Движок_игры"/>
+        <NamedIndividual IRI="#Frosbite"/>
+        <NamedIndividual IRI="#Fifa_22"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Игровой_движок_разработан_компанией"/>
+        <NamedIndividual IRI="#Frosbite"/>
+        <NamedIndividual IRI="#EA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Разаработала_движок"/>
+        <NamedIndividual IRI="#Microsoft"/>
+        <NamedIndividual IRI="#Frosbite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Разработала_лаунчер"/>
+        <NamedIndividual IRI="#Microsoft"/>
+        <NamedIndividual IRI="#XBOX_Store"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Сделала_игру"/>
+        <NamedIndividual IRI="#Microsoft"/>
+        <NamedIndividual IRI="#Forza_Horizon_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Создала_платформу"/>
+        <NamedIndividual IRI="#Microsoft"/>
+        <NamedIndividual IRI="#One"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Создала_платформу"/>
+        <NamedIndividual IRI="#Microsoft"/>
+        <NamedIndividual IRI="#SeriesX"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Создала_платформу"/>
+        <NamedIndividual IRI="#Nintendo"/>
+        <NamedIndividual IRI="#Switch"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Платформа_имеет_игру"/>
+        <NamedIndividual IRI="#One"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Платформа_имеет_игру"/>
+        <NamedIndividual IRI="#One"/>
+        <NamedIndividual IRI="#Fifa_22"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Платформа_имеет_игру"/>
+        <NamedIndividual IRI="#One"/>
+        <NamedIndividual IRI="#Forza_Horizon_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Платформа_разработана_компанией"/>
+        <NamedIndividual IRI="#One"/>
+        <NamedIndividual IRI="#Microsoft"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Лаунчер_имеет_игру"/>
+        <NamedIndividual IRI="#Origin"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Лаунчер_имеет_игру"/>
+        <NamedIndividual IRI="#Origin"/>
+        <NamedIndividual IRI="#Fifa_22"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Принадлежит_компании"/>
+        <NamedIndividual IRI="#Origin"/>
+        <NamedIndividual IRI="#EA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Платформа_имеет_игру"/>
+        <NamedIndividual IRI="#PC"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Платформа_имеет_игру"/>
+        <NamedIndividual IRI="#PC"/>
+        <NamedIndividual IRI="#Fifa_22"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Платформа_имеет_игру"/>
+        <NamedIndividual IRI="#PC"/>
+        <NamedIndividual IRI="#Forza_Horizon_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Платформа_имеет_игру"/>
+        <NamedIndividual IRI="#PS4"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Платформа_имеет_игру"/>
+        <NamedIndividual IRI="#PS4"/>
+        <NamedIndividual IRI="#Fifa_22"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Платформа_разработана_компанией"/>
+        <NamedIndividual IRI="#PS4"/>
+        <NamedIndividual IRI="#Sony"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Платформа_имеет_игру"/>
+        <NamedIndividual IRI="#PS5"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Платформа_имеет_игру"/>
+        <NamedIndividual IRI="#PS5"/>
+        <NamedIndividual IRI="#Fifa_22"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Платформа_разработана_компанией"/>
+        <NamedIndividual IRI="#PS5"/>
+        <NamedIndividual IRI="#Sony"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Лаунчер_имеет_игру"/>
+        <NamedIndividual IRI="#PSstore"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Лаунчер_имеет_игру"/>
+        <NamedIndividual IRI="#PSstore"/>
+        <NamedIndividual IRI="#Fifa_22"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Принадлежит_компании"/>
+        <NamedIndividual IRI="#PSstore"/>
+        <NamedIndividual IRI="#Sony"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Платформа_имеет_игру"/>
+        <NamedIndividual IRI="#SeriesX"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Платформа_имеет_игру"/>
+        <NamedIndividual IRI="#SeriesX"/>
+        <NamedIndividual IRI="#Fifa_22"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Платформа_имеет_игру"/>
+        <NamedIndividual IRI="#SeriesX"/>
+        <NamedIndividual IRI="#Forza_Horizon_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Платформа_разработана_компанией"/>
+        <NamedIndividual IRI="#SeriesX"/>
+        <NamedIndividual IRI="#Microsoft"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Разработала_лаунчер"/>
+        <NamedIndividual IRI="#Sony"/>
+        <NamedIndividual IRI="#PSstore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Создала_платформу"/>
+        <NamedIndividual IRI="#Sony"/>
+        <NamedIndividual IRI="#PS4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Создала_платформу"/>
+        <NamedIndividual IRI="#Sony"/>
+        <NamedIndividual IRI="#PS5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Лаунчер_имеет_игру"/>
+        <NamedIndividual IRI="#Steam"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Лаунчер_имеет_игру"/>
+        <NamedIndividual IRI="#Steam"/>
+        <NamedIndividual IRI="#Fifa_22"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Лаунчер_имеет_игру"/>
+        <NamedIndividual IRI="#Steam"/>
+        <NamedIndividual IRI="#Forza_Horizon_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Принадлежит_компании"/>
+        <NamedIndividual IRI="#Steam"/>
+        <NamedIndividual IRI="#Valve"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Платформа_имеет_игру"/>
+        <NamedIndividual IRI="#Switch"/>
+        <NamedIndividual IRI="#Fifa_22"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Сделала_компания"/>
+        <NamedIndividual IRI="#Switch"/>
+        <NamedIndividual IRI="#Nintendo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Разработала_лаунчер"/>
+        <NamedIndividual IRI="#Valve"/>
+        <NamedIndividual IRI="#Steam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Платформа_имеет_игру"/>
+        <NamedIndividual IRI="#XBOX_Store"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Платформа_имеет_игру"/>
+        <NamedIndividual IRI="#XBOX_Store"/>
+        <NamedIndividual IRI="#Fifa_22"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Платформа_имеет_игру"/>
+        <NamedIndividual IRI="#XBOX_Store"/>
+        <NamedIndividual IRI="#Forza_Horizon_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Принадлежит_компании"/>
+        <NamedIndividual IRI="#XBOX_Store"/>
+        <NamedIndividual IRI="#Microsoft"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Платформа_имеет_игру"/>
+        <NamedIndividual IRI="#iOS"/>
+        <NamedIndividual IRI="#Fifa_22"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Вышла_на_платформе"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">2021</Literal>
+    </DataPropertyAssertion>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#Дочерняя_компания"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="#Материнская_компания"/>
+        </ObjectInverseOf>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#Материнская_компания"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="#Дочерняя_компания"/>
+        </ObjectInverseOf>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#Принадлежит_компании"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="#Разработала_лаунчер"/>
+        </ObjectInverseOf>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#Разработала_лаунчер"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="#Принадлежит_компании"/>
+        </ObjectInverseOf>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#Сделала_компания"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="#Сделала_игру"/>
+        </ObjectInverseOf>
+    </EquivalentObjectProperties>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Вышла_на_платформе"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Дочерняя_компания"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Игровой_движок_разработан_компанией"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Лаунчер_имеет_игру"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Материнская_компания"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Принадлежит_компании"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Разаработала_движок"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Разработала_лаунчер"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Вышла_на_платформе"/>
+        <ObjectProperty IRI="#Лаунчер_имеет_игру"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Разаработала_движок"/>
+        <ObjectProperty IRI="#Создала_платформу"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Игра_вышла_на_платформе"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Платформа_имеет_игру"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Платформа_разработана_компанией"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Сделала_игру"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Сделала_компания"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#Вышла_на_платформе"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#Движок_игры"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#Дочерняя_компания"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#Игра_вышла_на_платформе"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#Игровой_движок_разработан_компанией"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#Лаунчер_имеет_игру"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#Материнская_компания"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#Платформа_имеет_игру"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#Платформа_разработана_компанией"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#Принадлежит_компании"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#Разаработала_движок"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#Разработала_лаунчер"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#Сделала_игру"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#Сделала_компания"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#Сделана_на_движке"/>
+    </InverseFunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Вышла_на_платформе"/>
+        <Class IRI="#Игра"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Движок_игры"/>
+        <Class IRI="#Игровой_движок"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Дочерняя_компания"/>
+        <Class IRI="#Компания"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Игра_вышла_на_платформе"/>
+        <Class IRI="#Игра"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Игровой_движок_разработан_компанией"/>
+        <Class IRI="#Игровой_движок"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Лаунчер_имеет_игру"/>
+        <Class IRI="#Лаунчер"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Материнская_компания"/>
+        <Class IRI="#Компания"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Платформа_имеет_игру"/>
+        <Class IRI="#Игровая_платформа"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Платформа_разработана_компанией"/>
+        <Class IRI="#Игровая_платформа"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Принадлежит_компании"/>
+        <Class IRI="#Лаунчер"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Разаработала_движок"/>
+        <Class IRI="#Компания"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Разработала_лаунчер"/>
+        <Class IRI="#Компания"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Сделала_игру"/>
+        <Class IRI="#Компания"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Сделала_компания"/>
+        <Class IRI="#Игра"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Сделана_на_движке"/>
+        <Class IRI="#Игра"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Создала_платформу"/>
+        <Class IRI="#Компания"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Вышла_на_платформе"/>
+        <Class IRI="#Лаунчер"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Движок_игры"/>
+        <Class IRI="#Игра"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Дочерняя_компания"/>
+        <Class IRI="#Компания"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Игра_вышла_на_платформе"/>
+        <Class IRI="#Игровая_платформа"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Игровой_движок_разработан_компанией"/>
+        <Class IRI="#Компания"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Лаунчер_имеет_игру"/>
+        <Class IRI="#Игра"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Материнская_компания"/>
+        <Class IRI="#Компания"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Платформа_имеет_игру"/>
+        <Class IRI="#Игра"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Платформа_разработана_компанией"/>
+        <Class IRI="#Компания"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Принадлежит_компании"/>
+        <Class IRI="#Компания"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Разаработала_движок"/>
+        <Class IRI="#Игровой_движок"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Разработала_лаунчер"/>
+        <Class IRI="#Лаунчер"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Сделала_игру"/>
+        <Class IRI="#Игра"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Сделала_компания"/>
+        <Class IRI="#Компания"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Сделана_на_движке"/>
+        <Class IRI="#Игровой_движок"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Создала_платформу"/>
+        <Class IRI="#Игровая_платформа"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Активы"/>
+        <DataProperty IRI="#Показатель"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Капитализация"/>
+        <DataProperty IRI="#Показатель"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Оборот"/>
+        <DataProperty IRI="#Показатель"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Операционная_прибль"/>
+        <DataProperty IRI="#Показатель"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Оценка_Kataku"/>
+        <DataProperty IRI="#Оценка"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Оценка_PCWorld"/>
+        <DataProperty IRI="#Оценка"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Оценка_Stopgame"/>
+        <DataProperty IRI="#Оценка"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Оценка_игромании"/>
+        <DataProperty IRI="#Оценка"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Оценка_канобу"/>
+        <DataProperty IRI="#Оценка"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Оценка_критиков_на_Metacritic"/>
+        <DataProperty IRI="#Оценка"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Пользовательская_ценка_на_Metacritic"/>
+        <DataProperty IRI="#Оценка"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Число_сотрудников"/>
+        <DataProperty IRI="#Показатель"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Чистая_прибль"/>
+        <DataProperty IRI="#Показатель"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Вышла_на_платформе"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Оценка_Stopgame"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Оценка_критиков_на_Metacritic"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Пользовательская_ценка_на_Metacritic"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Вышла_на_платформе"/>
+        <Class IRI="#Игра"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Оценка_критиков_на_Metacritic"/>
+        <Class IRI="#Игра"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Пользовательская_ценка_на_Metacritic"/>
+        <Class IRI="#Игра"/>
+    </DataPropertyDomain>
+</Ontology>
 
 
 

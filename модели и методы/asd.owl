@@ -1,0 +1,591 @@
+[ {
+  "@id" : "_:genid1",
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Материнская_компания"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Дочерняя_компания"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Разработала_лаунчер"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Принадлежит_компании"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Сделала_игру"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Android",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Мобильная" ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Имеет_игру" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Fifa"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Apple",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания" ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Создала" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#iOS"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#BattleField",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра", "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#От_первого_лица" ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Вышла_в" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Origin"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PSstore"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#XBOX_Store"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "2021"
+  } ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Вышла_на" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#One"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PC"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PS4"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PS5"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#SeriesX"
+  } ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Сделала_компания" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#DICE"
+  } ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Сделана_на_движке" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Frosbite"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Battle_Royal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Жанр"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#DICE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания" ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Дочерняя_компания" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#EA"
+  } ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Сделала_игру" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#BattleField"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#EA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания" ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Материнская_компания" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#DICE"
+  } ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Разаработала_движок" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Frosbite"
+  } ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Разработала_лаунчер" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Origin"
+  } ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Сделала_игру" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Fifa"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Fifa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра" ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Вышла_в" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Origin"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PSstore"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#XBOX_Store"
+  } ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Вышла_на" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#One"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PC"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PS4"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PS5"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#SeriesX"
+  } ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Сделала_компания" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#EA"
+  } ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Сделана_на_движке" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Frosbite"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Forza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Авто_симулятор", "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра" ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Вышла_на" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#One"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PC"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#SeriesX"
+  } ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Разработана" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Microsoft"
+  } ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Сделана_на_движке" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#ForzaTech"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#ForzaTech",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровой_движок" ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Движок_игры" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Forza"
+  } ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Разработан" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Microsoft"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Frosbite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровой_движок" ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Движок_игры" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#BattleField"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Fifa"
+  } ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Разработан" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#EA"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#MOBA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Жанр"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Microsoft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания" ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Разаработала_движок" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Frosbite"
+  } ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Разработала_лаунчер" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#XBOX_Store"
+  } ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Сделала_игру" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Forza"
+  } ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Создала" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#One"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#SeriesX"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Nintendo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания" ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Создала" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Switch"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#One",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#XBOX" ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Имеет_игру" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#BattleField"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Fifa"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Forza"
+  } ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Разработана" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Microsoft"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Origin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Лаунчер" ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Лаунчер_имеет" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#BattleField"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Fifa"
+  } ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Принадлежит_компании" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#EA"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PC" ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Имеет_игру" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#BattleField"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Fifa"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Forza"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровая_платформа"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Консоль"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PS4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PS" ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Имеет_игру" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#BattleField"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Fifa"
+  } ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Разработана" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Sony"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PS5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PS" ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Имеет_игру" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#BattleField"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Fifa"
+  } ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Разработана" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Sony"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PSstore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Лаунчер" ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Лаунчер_имеет" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#BattleField"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Fifa"
+  } ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Принадлежит_компании" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Sony"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#SeriesX",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#XBOX" ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Имеет_игру" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#BattleField"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Fifa"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Forza"
+  } ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Разработана" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Microsoft"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Sony",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания" ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Разработала_лаунчер" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PSstore"
+  } ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Создала" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PS4"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#PS5"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Switch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Консоль" ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Разработана" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Nintendo"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#XBOX",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Консоль"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#XBOX_Store",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Лаунчер" ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Имеет_игру" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#BattleField"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Fifa"
+  }, {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Forza"
+  } ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Принадлежит_компании" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Microsoft"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#iOS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Мобильная" ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Имеет_игру" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Fifa"
+  } ],
+  "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Разработана" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Apple"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Авто_симулятор",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Симулятор"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Вышла_в",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Лаунчер"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Лаунчер_имеет"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Вышла_на",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровая_платформа"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Год",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Движок_игры",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровой_движок"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Дочерняя_компания",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Жанр",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровая_платформа",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровой_движок",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Имеет_игру",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровая_платформа"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Консоль",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровая_платформа"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Лаунчер",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Лаунчер_имеет",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Лаунчер"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Материнская_компания",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Мобильная",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровая_платформа"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Название",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#От_первого_лица",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Шутер"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#От_третьего_лица",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Шутер"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Принадлежит_компании",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Лаунчер"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Разаработала_движок",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровой_движок"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Создала"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Разработала_лаунчер",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Лаунчер"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Разработан",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровой_движок"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Разработана",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровая_платформа"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Сделала_игру",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Сделала_компания",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Сделана_на_движке",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игра"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровой_движок"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Симулятор",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Авто_симулятор"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Создала",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Компания"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Игровая_платформа"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Спортивный_симулятор",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Симулятор"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Шутер",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#Жанр"
+  } ]
+} ]
