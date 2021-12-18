@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2">
-    <Prefix name="" IRI="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -14,7 +14,16 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="untitled-ontology-2" IRI="http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2#"/>
     <Declaration>
+        <DataProperty IRI="#Количесво_пользователей"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Год_выхода"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Спортивный_симулятор"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Серия"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Origin"/>
@@ -35,6 +44,9 @@
         <NamedIndividual IRI="#Switch"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#Вышла_в_лаунчере"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#Игровой_движок_разработан_компанией"/>
     </Declaration>
     <Declaration>
@@ -47,13 +59,10 @@
         <NamedIndividual IRI="#iOS"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#Материнская_компания"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#PS5"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#Вышла_на_платформе"/>
+        <ObjectProperty IRI="#Материнская_компания"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MOBA"/>
@@ -65,19 +74,22 @@
         <NamedIndividual IRI="#ForzaTech"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#Дата_основания"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Sony"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#XBOX_Store"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#Игра_вышла_на_платформе"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#Оценка_Kataku"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Fifa_22"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Игра_вышла_на_платформе"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#Платформа_разработана_компанией"/>
@@ -98,13 +110,13 @@
         <NamedIndividual IRI="#Frosbite"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#Вышла_на_платформе"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#XBOX"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#EA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fifa"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Оборот"/>
@@ -125,10 +137,10 @@
         <ObjectProperty IRI="#Движок_игры"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Консоль"/>
+        <Class IRI="#Симулятор"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Симулятор"/>
+        <Class IRI="#Консоль"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Авто_симулятор"/>
@@ -158,10 +170,10 @@
         <Class IRI="#Игровая_платформа"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#Сделала_компания"/>
+        <ObjectProperty IRI="#Разработала_лаунчер"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#Разработала_лаунчер"/>
+        <ObjectProperty IRI="#Сделала_компания"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Steam"/>
@@ -173,13 +185,19 @@
         <DataProperty IRI="#Активы"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Forza_Horizone"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Лаунчер"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Компания"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#One"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Компания"/>
+        <Class IRI="#Forza"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Оценка_Stopgame"/>
@@ -218,23 +236,49 @@
         <NamedIndividual IRI="#Microsoft"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#BattleField_2042"/>
+        <Class IRI="#BattleField"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Forza_Horizon_5"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#BattleField_2042"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#Оценка_игромании"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#Создала_платформу"/>
+        <Class IRI="#Forza_motorsport"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Пользовательская_ценка_на_Metacritic"/>
     </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Создала_платформу"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#BattleField"/>
+        <Class IRI="#Серия"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#Battle_Royal"/>
         <Class IRI="#Жанр"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fifa"/>
+        <Class IRI="#Серия"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Forza"/>
+        <Class IRI="#Серия"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Forza_Horizone"/>
+        <Class IRI="#Forza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Forza_motorsport"/>
+        <Class IRI="#Forza"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MOBA"/>
@@ -285,6 +329,10 @@
         <Class IRI="#Жанр"/>
     </SubClassOf>
     <ClassAssertion>
+        <Class IRI="#BattleField"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Игра"/>
         <NamedIndividual IRI="#BattleField_2042"/>
     </ClassAssertion>
@@ -301,6 +349,10 @@
         <NamedIndividual IRI="#EA"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Fifa"/>
+        <NamedIndividual IRI="#Fifa_22"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Игра"/>
         <NamedIndividual IRI="#Fifa_22"/>
     </ClassAssertion>
@@ -311,6 +363,10 @@
     <ClassAssertion>
         <Class IRI="#Игровой_движок"/>
         <NamedIndividual IRI="#ForzaTech"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Forza_Horizone"/>
+        <NamedIndividual IRI="#Forza_Horizon_5"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Авто_симулятор"/>
@@ -385,17 +441,17 @@
         <NamedIndividual IRI="#iOS"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#Вышла_на_платформе"/>
+        <ObjectProperty IRI="#Вышла_в_лаунчере"/>
         <NamedIndividual IRI="#BattleField_2042"/>
         <NamedIndividual IRI="#Origin"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#Вышла_на_платформе"/>
+        <ObjectProperty IRI="#Вышла_в_лаунчере"/>
         <NamedIndividual IRI="#BattleField_2042"/>
         <NamedIndividual IRI="#PSstore"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#Вышла_на_платформе"/>
+        <ObjectProperty IRI="#Вышла_в_лаунчере"/>
         <NamedIndividual IRI="#BattleField_2042"/>
         <NamedIndividual IRI="#XBOX_Store"/>
     </ObjectPropertyAssertion>
@@ -465,17 +521,17 @@
         <NamedIndividual IRI="#Fifa_22"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#Вышла_на_платформе"/>
+        <ObjectProperty IRI="#Вышла_в_лаунчере"/>
         <NamedIndividual IRI="#Fifa_22"/>
         <NamedIndividual IRI="#Origin"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#Вышла_на_платформе"/>
+        <ObjectProperty IRI="#Вышла_в_лаунчере"/>
         <NamedIndividual IRI="#Fifa_22"/>
         <NamedIndividual IRI="#PSstore"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#Вышла_на_платформе"/>
+        <ObjectProperty IRI="#Вышла_в_лаунчере"/>
         <NamedIndividual IRI="#Fifa_22"/>
         <NamedIndividual IRI="#XBOX_Store"/>
     </ObjectPropertyAssertion>
@@ -785,9 +841,44 @@
         <NamedIndividual IRI="#Fifa_22"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Вышла_на_платформе"/>
+        <DataProperty IRI="#Год_выхода"/>
         <NamedIndividual IRI="#BattleField_2042"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">2021</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Оценка_Kataku"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Оценка_PCWorld"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">56</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Оценка_Stopgame"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">67</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Оценка_игромании"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">64</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Оценка_канобу"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">74</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Оценка_критиков_на_Metacritic"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">56</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Пользовательская_ценка_на_Metacritic"/>
+        <NamedIndividual IRI="#BattleField_2042"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">23</Literal>
     </DataPropertyAssertion>
     <EquivalentObjectProperties>
         <ObjectProperty IRI="#Дочерняя_компания"/>
@@ -820,7 +911,7 @@
         </ObjectInverseOf>
     </EquivalentObjectProperties>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Вышла_на_платформе"/>
+        <ObjectProperty IRI="#Вышла_в_лаунчере"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -852,7 +943,7 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#Вышла_на_платформе"/>
+        <ObjectProperty IRI="#Вышла_в_лаунчере"/>
         <ObjectProperty IRI="#Лаунчер_имеет_игру"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
@@ -875,7 +966,7 @@
         <ObjectProperty IRI="#Сделала_компания"/>
     </FunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="#Вышла_на_платформе"/>
+        <ObjectProperty IRI="#Вышла_в_лаунчере"/>
     </InverseFunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
         <ObjectProperty IRI="#Движок_игры"/>
@@ -920,7 +1011,7 @@
         <ObjectProperty IRI="#Сделана_на_движке"/>
     </InverseFunctionalObjectProperty>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Вышла_на_платформе"/>
+        <ObjectProperty IRI="#Вышла_в_лаунчере"/>
         <Class IRI="#Игра"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -984,7 +1075,7 @@
         <Class IRI="#Компания"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#Вышла_на_платформе"/>
+        <ObjectProperty IRI="#Вышла_в_лаунчере"/>
         <Class IRI="#Лаунчер"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -1052,6 +1143,10 @@
         <DataProperty IRI="#Показатель"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#Дата_основания"/>
+        <DataProperty IRI="#Показатель"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#Капитализация"/>
         <DataProperty IRI="#Показатель"/>
     </SubDataPropertyOf>
@@ -1100,7 +1195,7 @@
         <DataProperty IRI="#Показатель"/>
     </SubDataPropertyOf>
     <FunctionalDataProperty>
-        <DataProperty IRI="#Вышла_на_платформе"/>
+        <DataProperty IRI="#Год_выхода"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
         <DataProperty IRI="#Оценка_Stopgame"/>
@@ -1112,12 +1207,32 @@
         <DataProperty IRI="#Пользовательская_ценка_на_Metacritic"/>
     </FunctionalDataProperty>
     <DataPropertyDomain>
-        <DataProperty IRI="#Вышла_на_платформе"/>
+        <DataProperty IRI="#Год_выхода"/>
+        <Class IRI="#Игра"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Год_выхода"/>
+        <Class IRI="#Игровая_платформа"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Год_выхода"/>
+        <Class IRI="#Игровой_движок"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Количесво_пользователей"/>
+        <Class IRI="#Лаунчер"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Оценка"/>
         <Class IRI="#Игра"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#Оценка_критиков_на_Metacritic"/>
         <Class IRI="#Игра"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Показатель"/>
+        <Class IRI="#Компания"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#Пользовательская_ценка_на_Metacritic"/>

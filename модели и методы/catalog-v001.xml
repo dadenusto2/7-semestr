@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1639724661806" name="duplicate:http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2" uri="games.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1639724661806" name="duplicate:http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2" uri="Games1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1639730859756" name="duplicate:http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2" uri="games.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1639730859756" name="duplicate:http://www.semanticweb.org/kgeny/ontologies/2021/11/untitled-ontology-2" uri="Games1.owl"/>
     </group>
 </catalog>
